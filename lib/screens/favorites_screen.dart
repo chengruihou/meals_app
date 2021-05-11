@@ -11,7 +11,7 @@ class FavoritesScreen extends StatelessWidget {
       return Center(
           child: Text("You have no favorites yet... Start adding some!"));
     }
-    /* return ListView.builder(
+    return ListView.builder(
       itemBuilder: (ctx, index) {
         return MealItem(
           id: favoriteMeals[index].id,
@@ -24,6 +24,5 @@ class FavoritesScreen extends StatelessWidget {
       },
       itemCount: favoriteMeals.length,
     );
-    */
   }
 }

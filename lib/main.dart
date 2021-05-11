@@ -50,7 +50,9 @@ class _MyAppState extends State<MyApp> {
   }
 
   bool _isMealFavorite(String id) {
-    return _favoriteMeals.any((meal) => meal.id == id);
+    return _favoriteMeals.any((meal) {
+      return meal.id == id;
+    });
   }
 
   void toggleFavorite(String mealID) {
@@ -71,7 +73,7 @@ class _MyAppState extends State<MyApp> {
   }
 
   List<Meal> _availableMeals = DUMMY_MEALS;
-  List<Meal> _favoriteMeals;
+  List<Meal> _favoriteMeals = [];
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

@@ -36,17 +36,17 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
     isDoneinit = true;
   }
 
-  void removeMeal(String mealID) {
-    setState(() {
-      categoryMeals.removeWhere((element) {
-        if (element.id == mealID) {
-          return true;
-        } else {
-          return false;
-        }
-      });
-    });
-  }
+  // void removeMeal(String mealID) {
+  //   setState(() {
+  //     categoryMeals.removeWhere((element) {
+  //       if (element.id == mealID) {
+  //         return true;
+  //       } else {
+  //         return false;
+  //       }
+  //     });
+  //   });
+  // }
 
   @override
   Widget build(BuildContext context) {

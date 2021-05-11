@@ -88,8 +88,10 @@ class MealDetailScreen extends StatelessWidget {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(isMealFavorite(mealID) ? Icons.star : Icons.star_border),
-        onPressed: toggleFavorite,
+        child: Icon(
+          isMealFavorite(mealID) ? Icons.star : Icons.star_border,
+        ),
+        onPressed: () => toggleFavorite(mealID),
       ),
     );
   }
